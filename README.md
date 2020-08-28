@@ -17,9 +17,12 @@ This Project was made in my Bachelor Degree. The objective is to implement a dis
 - In this versions of the project we introduced the *poll()* system call for handling multiple connected clients at the same time. The system works with the main thread putting the requests (received by the *poll()*) in a Queue where the secondary thread will take the tasks and execut them. The tasks are only write tasks(put or delete). Each Write operation as an identifier that is a integer and is determinated by the variable *last_assign*. This identifier is sent to the client. Now the client can verify if the operation with that identifier is already executed or not. The read operatons are executed when are received in the server. Use of locks to control the acess to the Queue by the threads.
 
 
+
 ## Step 4
 
 - In this step we introduced the Zookeeper. Zookeeper is a tool that can notify other entities (like clients or servers) that something in the distributed system has changed (some server died for example) and is responsible for the availability of all the servers. We change the server in order to be possible if a server dies, the system will adapt and will still be working properly. It was used *watch* to be possible to notify other servers that sometthing changed is the system. This version only supports loosing servers, not adding (except in the beginning were there are no data stored).
+
+![system](zookeeper.png)
 
 # Requirements
 
