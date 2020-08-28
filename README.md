@@ -1,6 +1,6 @@
 # DistributedSystems
 
-This Project was made in my Bachelor Degree. The objective is to implement a distributed system in C language and using some external tools(ProtoBufers and Zookeper).
+This Project was made in my Bachelor Degree. The objective is to implement a distributed system in C language and using some external tools(Protocol Buffers and Zookeeper).
 
 # 4 Project General Steps 
 
